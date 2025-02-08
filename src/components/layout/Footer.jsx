@@ -62,17 +62,17 @@ function Footer() {
             <ul className="list-unstyled text-center mt-2">
               <li>
                 <Link to="/">
-                  <i classNa="bi bi-facebook"></i>
+                  <i className="bi bi-facebook"></i>
                 </Link>
               </li>
               <li>
                 <Link to="/">
-                  <i classNa="bi bi-twitter"></i>
+                  <i className="bi bi-twitter"></i>
                 </Link>
               </li>
               <li>
                 <Link to="/">
-                  <i classNa="bi bi-instagram"></i>
+                  <i className="bi bi-instagram"></i>
                 </Link>
               </li>
               <li>
@@ -90,7 +90,7 @@ function Footer() {
             <ul className="list-unstyled text-center mb-0">
               <li>
                 <Link to="/">
-                  © 2023 <span>CODE4EDUCATION</span>. All Rights Reserved
+                  © 2023 <span>BB</span>. All Rights Reserved
                 </Link>
               </li>
               <li>

@@ -19,7 +19,7 @@ function HomeShop() {
     <section className='shop-section'>
       <div className="container">
         <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-md-6 mb-5">
                 <h4>Download Mobile App And</h4>
                 <h2>Save upto 20%</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptates ducimus labore necessitatibus neque unde, eveniet quidem, culpa totam blanditiis sunt officia distinctio, aspernatur tenetur rem eius corrupti nemo deserunt!</p>
@@ -30,8 +30,8 @@ function HomeShop() {
                     <img src={StoreGoogle} alt="Android" className='img-fluid me-3 store'/>
                 </Link>
             </div>
-            <div className="col-lg-6">
-                <img src={DownloadImage} alt="Download Image" />
+            <div className="col-md-6">
+                <img src={DownloadImage} alt="Download Image" className='img-fluid'/>
             </div>
         </div>
       </div>

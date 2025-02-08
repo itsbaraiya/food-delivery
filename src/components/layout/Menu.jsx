@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 function Menu({image, rating, price, description, title, renderRatingIcon}) {
   return (
-    <div className="col-lg-4 col-xl-3">
+    <div className="col-md-6 col-lg-4 col-xl-3">
         <Card className='overflow-hidden h-100'>
             <div className="overflow-hidden">
                 <Card.Img variant="top" src={image}/>
