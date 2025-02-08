@@ -1,0 +1,57 @@
+.about-section {
+    padding: 80px 0 300px;
+    background: url("../assets/about/about-1.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+  
+    h2 {
+      font-size: 3.5rem;
+    }
+  
+    p {
+      color: var(--grey);
+      padding: 20px 30px;
+      font-size: 19px;
+    }
+  }
+  
+  .about_wrapper {
+    background: var(--yellow);
+    padding: 70px 0 30px;
+  }
+  
+  .about_box {
+    .about_icon img {
+      max-width: 25%;
+    }
+  
+    h4 {
+      font-size: 26px;
+      line-height: 1;
+      letter-spacing: 0.5008px;
+      margin: 30px 0 20px;
+    }
+  
+    p {
+      padding: 0 20px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    /* Home About 2.0 */
+    .about_section h2 {
+      font-size: 2.5rem;
+    }
+    .about_section p {
+      padding: 20px 0;
+    }
+    .about_box p {
+      padding: 0;
+    }
+  
+    /* Home Parallax 5.0 */
+    .bg_parallax_scroll {
+      background-attachment: scroll;
+      height: 500px;
+    }
+  }

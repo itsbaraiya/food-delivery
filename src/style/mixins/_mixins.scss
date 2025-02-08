@@ -1,0 +1,26 @@
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1900px,
+) !default;
+
+@mixin media-breakpoint-up($breakpoint) {
+    @if map-has-key($grid-breakpoints, $breakpoint) {
+      $min-width: map-get($grid-breakpoints, $breakpoint);
+      @if $min-width != 0 {
+        @media (min-width: #{$min-width}) {
+          @content;
+        }
+      } @else {
+        @content; // For 'xs' or 0px, no media query is applied
+      }
+    } @else {
+      @error "Invalid breakpoint: #{$breakpoint}. Available breakpoints are #{map-keys($grid-breakpoints)}.";
+    }
+  }
+  

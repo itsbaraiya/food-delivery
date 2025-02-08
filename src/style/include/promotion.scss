@@ -1,0 +1,34 @@
+/* Home Promotion 4.0 */
+.promotion_section {
+    padding: 60px 0;
+    background: var(--light-grey);
+  
+    h2 {
+      font-size: 3.25rem;
+      margin-bottom: 25px;
+    }
+  
+    p {
+      font-size: 1.125rem;
+    }
+  
+    ul {
+      padding-left: 15px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .promotion_section h2 {
+      font-size: 2.25rem;
+    }
+  }
+  
+  /* Home Parallax 5.0 */
+  .bg-parallax-scroll {
+    background: url("../assets/parallax/bg.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 700px;
+  }
+  

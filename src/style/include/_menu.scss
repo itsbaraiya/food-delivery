@@ -1,0 +1,121 @@
+.menu-section {
+    padding: 100px 0;
+  
+    h2 {
+      font-size: 3.5rem;
+      color: var(--light-red);
+    }
+  
+    .para {
+      color: var(--grey);
+      padding: 10px 100px;
+      font-size: 19px;
+    }
+  
+    .card {
+      &:hover {
+        .card-img-top {
+          transform: scale(1.1);
+        }
+        .add_to_cart a {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+  
+      .card-img-top {
+        transition: all 500ms ease-in-out;
+      }
+  
+      .card-title {
+        font-family: var(--oswald-font);
+        font-weight: 600;
+        margin: 5px 0 10px;
+      }
+  
+      .card-text {
+        color: var(--grey);
+        font-size: 15px;
+      }
+  
+      .menu_price {
+        background-color: var(--bg-coffee);
+        display: inline-block;
+        padding: 7px 12px;
+        border-radius: 4px;
+  
+        h5 {
+          color: var(--yellow);
+          font-size: 1rem;
+        }
+      }
+  
+      .add_to_cart a {
+        background: var(--yellow);
+        display: inline-block;
+        font-size: 1rem;
+        line-height: 1;
+        font-weight: 700;
+        padding: 8px 14px;
+        border-radius: 4px;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all 500ms ease-in-out;
+        color:#000000;
+      }
+    }
+  
+    .item_rating i {
+      color: var(--yellow);
+      padding-right: 5px;
+    }
+  
+    .wishlist i {
+      color: var(--grey);
+      font-size: 20px;
+      cursor: pointer;
+  
+      &:hover {
+        color: var(--light-red);
+      }
+    }
+  
+    .ads_box {
+      text-align: right;
+      padding: 80px 35px 50px;
+      border-radius: 6px;
+  
+      h4 {
+        font-size: 2.25rem;
+        font-weight: 300;
+        color: var(--brown);
+      }
+  
+      h5 {
+        font-size: 2.375rem;
+        color: var(--brown);
+      }
+  
+      a {
+        margin-top: 15px;
+        font-size: 18px;
+      }
+    }
+  
+    .ads_img1 {
+      background: url("../assets/menu/ads-1.jpg") no-repeat center center;
+      background-size: cover;
+    }
+  
+    .ads_img2 {
+      background: url("../assets/menu/ads-2.jpg") no-repeat center center;
+      background-size: cover;
+    }
+  }
+  
+  @media (max-width: 767px) {  
+    /* Home Menu 3.0 */
+    .menu_section .para {
+      padding: 10px 0px;
+    }
+  }
