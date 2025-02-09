@@ -1,11 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout/Layout'
+import MenuLandingSection from '../pages/Menu/MenuLandingSection'
 function OurMenu() {
   return (
     <Layout>
-        <div>
-        <h1>About </h1>
-        </div>
+        <MenuLandingSection/>
     </Layout>
   )
 }

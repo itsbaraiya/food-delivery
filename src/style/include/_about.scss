@@ -92,3 +92,28 @@
     }
   }
  }
+
+ .bg-parallax-scroll__content {
+  h1 {
+    font-family: var(--lilita-font);
+    font-size: 7rem;
+    line-height: 1;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+    color: #ffffff;
+  }
+ }
+
+ .overlay {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+  }
+ }
