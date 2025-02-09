@@ -9,27 +9,10 @@ import Image7 from '../../assets/menu/burger-17.jpg'
 import Image8 from '../../assets/menu/burger-18.jpg'
 import Cards from '../../components/layout/Menu'
 import { Link } from 'react-router-dom'
+import { renderRatingIcon } from "../../Helpers/RatingIcons";
+
 
 function HomeMenu() {
-
-  // Rating Logic
-  const renderRatingIcon = (rating) => {
-   const stars = [];
-   for(let i = 0; i < 5; i++) {
-    if(rating > 0.5) {
-      stars.push(<i key={i} className='bi bi-star-fill'></i>);
-      rating--;
-    }
-    else if(rating > 0 && rating < 1) {
-      stars.push(<i key={"half"} className='bi bi-star-half'></i>);
-      rating--;
-    }
-    else {
-      stars.push(<i key={`empty ${i}`} className='bi bi-star'></i>);
-    }
-   }
-   return stars;
-  };
 
   const burgers = [
     {
@@ -110,9 +93,9 @@ function HomeMenu() {
             </div>
             <div className="row justify-content-md-center g-4">
               {burgers.map((burger, index) => {
-                const { image, rating, price, description, title } = burger;
+                const {id, image, rating, price, description, title } = burger;
                 return (
-                <Cards key={index} image={image} description={description} title={title} price={price} rating={rating} renderRatingIcon = {renderRatingIcon}/>
+                <Cards key={index} image={image} description={description} title={title} price={price} rating={rating} renderRatingIcon = {renderRatingIcon}  id={id}/>
                 );
               })}
             </div>

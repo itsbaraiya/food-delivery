@@ -55,3 +55,40 @@
       height: 500px;
     }
   }
+
+ .about-landing-section {
+  .img-1 {
+    max-width: 80%;
+  }
+
+  .img-2 {
+    position: relative;
+    left: 30%;
+    top: -80px;
+    max-width: 50%;
+    object-fit: cover;
+
+    @media(min-width:768px) {
+      max-width: 35%;
+      max-height: 350px;
+      top: -125px;
+    }
+  }
+
+  h1 {
+    padding: 15px;
+    background-color: var(--yellow);
+
+    @media(min-width:992px) {
+      width: 80%;
+    }
+  }
+
+  .hero-banner__content {
+    @media(min-width:992px) {
+      position: relative;
+      top:180px;
+      left: 200px;
+    }
+  }
+ }

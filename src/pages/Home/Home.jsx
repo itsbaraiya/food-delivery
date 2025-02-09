@@ -6,7 +6,7 @@ import HomeMenu from './HomeMenu'
 import Promotion from './Promotion'
 import HomeShop from './HomeShop'
 import Testimonials from './Testimonials'
-import Contact from './Contact'
+import HomeContact from './Contact'
 
 function Home() {
 
@@ -19,7 +19,7 @@ function Home() {
      <Promotion/>
      <HomeShop/>
      <Testimonials/>
-     <Contact/>
+     <HomeContact/>
     </Layout>
     </>
   )
